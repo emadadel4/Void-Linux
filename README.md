@@ -2,6 +2,6 @@
 
 1️⃣ Restore
 ```bash
-curl -sL https://raw.githubusercontent.com/emadadel4/Void-Linux/void.sh | bash
+curl -sL https://raw.githubusercontent.com/emadadel4/Void-Linux/refs/heads/main/void.sh | bash
 ```
 

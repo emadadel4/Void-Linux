@@ -1,8 +1,19 @@
 #!/bin/bash
-sudo xbps-install nano xrandr bluez bluez-alsa blueman vlc uget telegram-desktop -y
-sudo ln -s /etc/sv/bluetoothd  /var/service/
-sudo ln -s /etc/sv/bluez-alsa  /var/service/
+
+# Install required packages
+sudo xbps-install -y curl nano xrandr bluez bluez-alsa blueman vlc uget
+
+# Enable Bluetooth services
+sudo ln -sf /etc/sv/bluetoothd /var/service/
+sudo ln -sf /etc/sv/bluez-alsa /var/service/
+
+# Set up pulseaudio service
 sudo mkdir -p /etc/sv/pulseaudio
-echo -e '#!/bin/bash\nexec /usr/bin/pulseaudio --start --log-target=syslog' | sudo tee /etc/sv/pulseaudio/run
+echo -e '#!/bin/bash\nexec /usr/bin/pulseaudio --start --log-target=syslog' | sudo tee /etc/sv/pulseaudio/run > /dev/null
 sudo chmod +x /etc/sv/pulseaudio/run
-sudo ln -s /etc/sv/pulseaudio /var/service/
+sudo ln -sf /etc/sv/pulseaudio /var/service/
+
+# Restore XFCE settings
+tar xzvf xfce-settings-backup.tar.gz -C ~/
+cp -f xfce-backup/*.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/
+xfce4-panel --restart

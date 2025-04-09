@@ -21,4 +21,4 @@ xbps-install -S $(cat installed-packages.txt)
 ```
 
 🎯 Notes
-After running these commands, you may need to log out and log back in for changes to take effect.
+`After running these commands, you may need to log out and log back in for changes to take effect.`

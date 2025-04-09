@@ -1,18 +1,7 @@
 ### 🚀 Void Linux XFCE - Restore Settings After Reinstallation
 
-1️⃣ unzip
+1️⃣ Restore
 ```bash
-tar xzvf xfce-settings-backup.tar.gz -C ~/
-xfce4-panel --restar
+curl -sL https://raw.githubusercontent.com/emadadel4/Void-Linux/void.sh | bash
 ```
 
-
-2️⃣ Restore Desktop, Panel, and Keyboard Shortcuts
-
-```bash
-cp ~/xfce-backup/*.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/
-xfce4-panel --restart
-```
-
-🎯 Notes
-`After running these commands, you may need to log out and log back in for changes to take effect.`

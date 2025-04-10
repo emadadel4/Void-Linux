@@ -29,7 +29,7 @@ echo "Install required packages.."
 
 # Restore XFCE settings
 echo "Restore XFCE settings..."
-sudo curl -L -o xfce-settings-backup.tar.gz https://github.com/emadadel4/Void-Linux/raw/refs/heads/main/xfce4-config.tar.gz
+sudo curl -L -o xfce4-config.tar.gz https://github.com/emadadel4/Void-Linux/raw/refs/heads/main/xfce4-config.tar.gz
 sleep 2
 sudo tar -xzvf xfce4-config.tar.gz .config/
 

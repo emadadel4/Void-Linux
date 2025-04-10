@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install required packages
-sudo xbps-install -y curl nano xrandr bluez bluez-alsa blueman vlc uget
+sudo xbps-install -y curl nano xrandr bluez bluez-alsa blueman vlc uget redshift
 
 # Enable Bluetooth services
 sudo ln -sf /etc/sv/bluetoothd /var/service/

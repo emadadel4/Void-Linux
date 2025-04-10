@@ -10,9 +10,9 @@ sudo xbps-install -S -y nano xrandr bluez bluez-alsa blueman vlc uget redshift r
 
 # Set up pulseaudio service
 echo "Set up pulseaudio service..."
-sudo mkdir -p /var/service/pulseaudio
-sudo echo -e '#!/bin/bash\nexec /usr/bin/pulseaudio --start --log-target=syslog' | sudo tee /var/service/pulseaudio/run > /dev/null
-sudo chmod +x /var/service/pulseaudio/run
+sudo mkdir -p /etc/sv/pulseaudio
+sudo echo -e '#!/bin/bash\nexec /usr/bin/pulseaudio --start --log-target=syslog' | sudo tee /etc/sv/pulseaudio/run > /dev/null
+sudo chmod +x /etc/sv/pulseaudio/run
 
 # Enable Bluetooth services
 echo "Enable Bluetooth services..."
@@ -21,7 +21,7 @@ sudo ln -s /etc/sv/bluetoothd /var/service/
 sudo ln -s /etc/sv/bluez-alsa /var/service/
 sudo ln -s /etc/sv/alsa /var/service/
 sudo ln -s /etc/sv/pulseaudio /var/service/
-sudo sv restart bluetoothd
+sleep 2
 sudo sv start bluetoothd
 sudo sv start pulseaudio
 pulseaudio -k
@@ -29,7 +29,7 @@ pulseaudio --start
 
 # Add bash completion source line to .bashrc
 echo "Add bash completion source line to .bashrc..."
-echo "source /usr/share/bash-completion/bash_completion" >> ~/.bashrc
+echo "source /usr/share/bash-completion/bash_completion" >> .bashrc
 source ~/.bashrc
 
 # Restore XFCE settings

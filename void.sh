@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Update
-sudo xbps-install -S void-repo-nonfree void-repo-multilib-nonfree void-repo-multilib -y
+sudo xbps-install void-repo-nonfree void-repo-multilib-nonfree void-repo-multilib -y
 xbps-install -Su -y
 
 # Install required packages

@@ -17,3 +17,8 @@ sudo ln -sf /etc/sv/pulseaudio /var/service/
 tar xzvf xfce-settings-backup.tar.gz -C ~/
 cp -f xfce-backup/*.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/
 xfce4-panel --restart
+
+mkdir -p ~/.config/redshift
+touch ~/.config/redshift/redshift.conf
+nano ~/.config/redshift/redshift.conf
+curl -s https://raw.githubusercontent.com/jonls/redshift/master/redshift.conf.sample -o ~/.config/redshift/redshift.conf

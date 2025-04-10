@@ -24,13 +24,8 @@ source ~/.bashrc
 
 # Restore XFCE settings
 curl -L -o xfce-settings-backup.tar.gz https://github.com/emadadel4/Void-Linux/raw/refs/heads/main/xfce-settings-backup.tar.gz
-
-if [ -f "xfce-settings-backup.tar.gz" ]; then
-    sudo tar xzvf xfce-settings-backup.tar.gz -C ~/
-    sleep 2
-else
-    echo "Failed to download XFCE settings backup."
-fi
+sleep 2
+sudo tar xzvf xfce-settings-backup.tar.gz
 
 # Redshift Settings
 sudo mkdir -p ~/.config/redshift

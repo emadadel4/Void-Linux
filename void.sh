@@ -26,6 +26,8 @@ source ~/.bashrc
 curl -L -o xfce-settings-backup.tar.gz https://github.com/emadadel4/Void-Linux/raw/refs/heads/main/xfce-settings-backup.tar.gz
 sleep 2
 sudo tar xzvf xfce-settings-backup.tar.gz
+sleep 1
+sudo cp -f ~/xfce-perchannel-xml/*.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/
 
 # Redshift Settings
 sudo mkdir -p ~/.config/redshift

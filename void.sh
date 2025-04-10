@@ -21,6 +21,9 @@ sudo ln -s /etc/sv/bluetoothd /var/service/
 sudo ln -s /etc/sv/bluez-alsa /var/service/
 sudo ln -s /etc/sv/alsa /var/service/
 sudo ln -s /etc/sv/pulseaudio /var/service/
+curl -L -o xfce-settings-backup.tar.gz https://github.com/emadadel4/Void-Linux/raw/refs/heads/main/.main.conf
+sleep 2
+sudo cp -f .main.conf /etc/bluetooth/
 sleep 2
 sudo sv start bluetoothd
 sudo sv start pulseaudio

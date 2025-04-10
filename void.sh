@@ -9,6 +9,8 @@ sudo xbps-install -y curl nano xrandr bluez bluez-alsa blueman vlc uget redshift
 # Enable Bluetooth services
 sudo ln -sf /etc/sv/bluetoothd /var/service/
 sudo ln -sf /etc/sv/bluez-alsa /var/service/
+sudo ln -sf /etc/sv/alsa /var/service/
+
 
 # Set up pulseaudio service
 sudo mkdir -p /etc/sv/pulseaudio

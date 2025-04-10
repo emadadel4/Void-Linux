@@ -18,6 +18,7 @@ tar xzvf xfce-settings-backup.tar.gz -C ~/
 cp -f xfce-backup/*.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/
 xfce4-panel --restart
 
+# Redshift Settings
 mkdir -p ~/.config/redshift
 touch ~/.config/redshift/redshift.conf
 nano ~/.config/redshift/redshift.conf

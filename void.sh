@@ -37,19 +37,10 @@ sudo cp -f ~/xfce-perchannel-xml/*.xml ~/.config/xfce4/xfconf/xfce-perchannel-xm
 
 # Redshift Settings
 echo "Redshift settings..."
-sudo mkdir -p ~/.config/redshift
-sudo touch ~/.config/redshift/redshift.conf
-sudo nano ~/.config/redshift/redshift.conf
-sudo curl -s https://raw.githubusercontent.com/jonls/redshift/master/redshift.conf.sample -o ~/.config/redshift/redshift.conf
+sudo mkdir -p /home/$(whoami)/.config/redshift
+sudo curl -s https://raw.githubusercontent.com/jonls/redshift/master/redshift.conf.sample -o /home/$(whoami)/.config/redshift/redshift.conf
 
 # Terminal Settings
 echo "Kitty settings..."
 sudo mkdir -p /home/$(whoami)/.config/kitty
 sudo curl -o /home/$(whoami)/.config/kitty/kitty.conf https://raw.githubusercontent.com/emadadel4/Void-Linux/refs/heads/main/kitty.conf
-
-# Screen Color Depth
-# Redshift settings
-echo "Redshift settings..."
-sudo mkdir -p /home/$(whoami)/.config/redshift
-sudo curl -s https://raw.githubusercontent.com/jonls/redshift/master/redshift.conf.sample -o /home/$(whoami)/.config/redshift/redshift.conf
-

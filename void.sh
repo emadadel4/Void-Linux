@@ -2,7 +2,7 @@
 
 # Update
 sudo xbps-install void-repo-nonfree void-repo-multilib-nonfree void-repo-multilib -y
-xbps-install -Su -y
+sudo xbps-install -Su -y
 
 # Install required packages
 sudo xbps-install -S -y nano xrandr bluez bluez-alsa blueman vlc uget redshift redshift-gtk kitty bash-completion

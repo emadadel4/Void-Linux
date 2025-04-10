@@ -34,7 +34,10 @@ nano ~/.config/redshift/redshift.conf
 curl -s https://raw.githubusercontent.com/jonls/redshift/master/redshift.conf.sample -o ~/.config/redshift/redshift.conf
 
 # Terminal Settings
+mkdir -p ~/.config/kitty
 curl -o ~/.config/kitty/kitty.conf https://raw.githubusercontent.com/emadadel4/Void-Linux/refs/heads/main/kitty.conf
-curl -o /etc/X11/xorg.conf.d/10-monitor.conf  https://raw.githubusercontent.com/emadadel4/Void-Linux/refs/heads/main/10-monitor.conf
 
-# Setup Gaming
+# Screen Color Depth
+sudo mkdir -p /etc/X11/xorg.conf.d/
+sudo curl -o /etc/X11/xorg.conf.d/10-monitor.conf https://raw.githubusercontent.com/emadadel4/Void-Linux/refs/heads/main/10-monitor.conf
+

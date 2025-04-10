@@ -20,7 +20,7 @@ echo "Enable Bluetooth services..."
 rfkill unblock bluetooth
 sudo ln -s /etc/sv/bluetoothd /var/service/
 sudo ln -s /etc/sv/bluez-alsa /var/service/
-sudo ln -s /etc/sv/alsa /var/service/
+#sudo ln -s /etc/sv/alsa /var/service/
 sudo ln -s /etc/sv/pulseaudio /var/service/
 sudo curl -L -o xfce-settings-backup.tar.gz https://github.com/emadadel4/Void-Linux/raw/refs/heads/main/.main.conf
 sleep 2

@@ -1,13 +1,13 @@
 #!/bin/bash
 
 # Update
-echo "Update Void.."
-sudo xbps-install void-repo-nonfree void-repo-multilib-nonfree void-repo-multilib -y
-sudo xbps-install -Su -y
+#echo "Update Void.."
+#sudo xbps-install void-repo-nonfree void-repo-multilib-nonfree void-repo-multilib -y
+#sudo xbps-install -Su -y
 
 echo "Install required packages.."
 # Install required packages
-sudo xbps-install -S -y nano xrandr bluez blueman libspa-bluetooth vlc uget redshift redshift-gtk kitty bash-completion
+#sudo xbps-install -S -y nano xrandr bluez blueman libspa-bluetooth vlc uget redshift redshift-gtk kitty bash-completion
 
 # Set up pipewire service
 #echo "/usr/bin/pipewire &" >> .xinitrc
@@ -23,9 +23,9 @@ sudo xbps-install -S -y nano xrandr bluez blueman libspa-bluetooth vlc uget reds
 #sudo ln -s /etc/sv/bluetoothd /var/service/
 
 # Add bash completion source line to .bashrc
-echo "Add bash completion source line to .bashrc..."
-echo "source /usr/share/bash-completion/bash_completion" >> .bashrc
-source ~/.bashrc
+#echo "Add bash completion source line to .bashrc..."
+#echo "source /usr/share/bash-completion/bash_completion" >> .bashrc
+#source ~/.bashrc
 
 # Restore XFCE settings
 echo "Restore XFCE settings..."
@@ -34,11 +34,11 @@ sleep 2
 sudo tar -xzvf xfce4-config.tar.gz .config/
 
 # Redshift Settings
-echo "Applying redshift settings..."
-sudo mkdir -p .config/redshift
-sudo curl -s https://raw.githubusercontent.com/jonls/redshift/master/redshift.conf.sample -o .config/redshift/redshift.conf
+#echo "Applying redshift settings..."
+#sudo mkdir -p .config/redshift
+#sudo curl -s https://raw.githubusercontent.com/jonls/redshift/master/redshift.conf.sample -o .config/redshift/redshift.conf
 
 # Screen Color Depth
-echo "Screen Color Depth..."
-sudo mkdir -p /etc/X11/xorg.conf.d/
-sudo curl -o /etc/X11/xorg.conf.d/10-monitor.conf https://raw.githubusercontent.com/emadadel4/Void-Linux/refs/heads/main/10-monitor.conf
+#echo "Screen Color Depth..."
+#sudo mkdir -p /etc/X11/xorg.conf.d/
+#sudo curl -o /etc/X11/xorg.conf.d/10-monitor.conf https://raw.githubusercontent.com/emadadel4/Void-Linux/refs/heads/main/10-monitor.conf

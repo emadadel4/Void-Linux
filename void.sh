@@ -9,10 +9,10 @@ echo "Install required packages.."
 sudo xbps-install -S -y nano xrandr bluez bluez-alsa blueman vlc uget redshift redshift-gtk kitty bash-completion pulseaudio
 
 # Set up pulseaudio service
-echo "Set up pulseaudio service..."
-sudo mkdir -p /etc/sv/pulseaudio
-sudo echo -e '#!/bin/bash\exec /usr/bin/pulseaudio --daemonize --log-target=syslog' | sudo tee /etc/sv/pulseaudio/run > /dev/null
-sudo chmod +x /etc/sv/pulseaudio/run
+#echo "Set up pulseaudio service..."
+#sudo mkdir -p /etc/sv/pulseaudio
+#sudo echo -e '#!/bin/bash\exec /usr/bin/pulseaudio --daemonize --log-target=syslog' | sudo tee /etc/sv/pulseaudio/run > /dev/null
+#sudo chmod +x /etc/sv/pulseaudio/run
 
 # Enable Bluetooth services
 echo "Enable Bluetooth services..."

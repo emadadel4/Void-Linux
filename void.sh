@@ -36,8 +36,8 @@ sudo cp -f ~/xfce-perchannel-xml/*.xml ~/.config/xfce4/xfconf/xfce-perchannel-xm
 
 # Redshift Settings
 echo "Redshift settings..."
-sudo mkdir -p /home/$(whoami)/.config/redshift
-sudo curl -s https://raw.githubusercontent.com/jonls/redshift/master/redshift.conf.sample -o /home/$(whoami)/.config/redshift/redshift.conf
+sudo mkdir -p .config/redshift
+sudo curl -s https://raw.githubusercontent.com/jonls/redshift/master/redshift.conf.sample -o .config/redshift/redshift.conf
 
 # Screen Color Depth
 echo "Screen Color Depth..."

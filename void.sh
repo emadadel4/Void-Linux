@@ -28,9 +28,6 @@ curl -L -o xfce-settings-backup.tar.gz https://github.com/emadadel4/Void-Linux/r
 if [ -f "xfce-settings-backup.tar.gz" ]; then
     sudo tar xzvf xfce-settings-backup.tar.gz -C ~/
     sleep 2
-    sudo mkdir -p ~/.config/xfce4/xfconf/xfce-perchannel-xml/
-    sudo cp -f xfce-perchannel-xml/*.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/
-    xfce4-panel --restart
 else
     echo "Failed to download XFCE settings backup."
 fi

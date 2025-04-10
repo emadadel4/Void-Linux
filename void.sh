@@ -17,6 +17,7 @@ sudo chmod +x /etc/sv/pulseaudio/run
 
 # Enable Bluetooth services
 echo "Enable Bluetooth services..."
+rfkill unblock bluetooth
 sudo ln -s /etc/sv/bluetoothd /var/service/
 sudo ln -s /etc/sv/bluez-alsa /var/service/
 sudo ln -s /etc/sv/alsa /var/service/

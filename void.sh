@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Update
+sudo xbps-install -Su -y
+
 # Install required packages
 sudo xbps-install -y curl nano xrandr bluez bluez-alsa blueman vlc uget redshift redshift-gtk void-repo-nonfree void-repo-multilib-nonfree void-repo-multilib kitty bash-completion
 

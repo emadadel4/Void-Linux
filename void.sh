@@ -36,3 +36,5 @@ curl -s https://raw.githubusercontent.com/jonls/redshift/master/redshift.conf.sa
 # Terminal Settings
 curl -o ~/.config/kitty/kitty.conf https://raw.githubusercontent.com/emadadel4/Void-Linux/refs/heads/main/kitty.conf
 curl -o /etc/X11/xorg.conf.d/10-monitor.conf  https://raw.githubusercontent.com/emadadel4/Void-Linux/refs/heads/main/10-monitor.conf
+
+# Setup Gaming

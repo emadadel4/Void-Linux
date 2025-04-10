@@ -44,9 +44,12 @@ sudo curl -s https://raw.githubusercontent.com/jonls/redshift/master/redshift.co
 
 # Terminal Settings
 echo "Kitty settings..."
-sudo mkdir -p ~/.config/kitty
-sudo curl -o ~/.config/kitty/kitty.conf https://raw.githubusercontent.com/emadadel4/Void-Linux/refs/heads/main/kitty.conf
+sudo mkdir -p /home/$(whoami)/.config/kitty
+sudo curl -o /home/$(whoami)/.config/kitty/kitty.conf https://raw.githubusercontent.com/emadadel4/Void-Linux/refs/heads/main/kitty.conf
 
 # Screen Color Depth
-sudo mkdir -p /etc/X11/xorg.conf.d/
-sudo curl -o /etc/X11/xorg.conf.d/10-monitor.conf https://raw.githubusercontent.com/emadadel4/Void-Linux/refs/heads/main/10-monitor.conf
+# Redshift settings
+echo "Redshift settings..."
+sudo mkdir -p /home/$(whoami)/.config/redshift
+sudo curl -s https://raw.githubusercontent.com/jonls/redshift/master/redshift.conf.sample -o /home/$(whoami)/.config/redshift/redshift.conf
+

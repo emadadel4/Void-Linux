@@ -23,6 +23,7 @@ echo "source /usr/share/bash-completion/bash_completion" >> ~/.bashrc
 source ~/.bashrc
 
 # Restore XFCE settings
+curl -L -o xfce-settings-backup.tar.gz https://github.com/emadadel4/Void-Linux/raw/refs/heads/main/xfce-settings-backup.tar.gz
 tar xzvf xfce-settings-backup.tar.gz -C ~/
 cp -f xfce-backup/*.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/
 xfce4-panel --restart

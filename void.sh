@@ -41,3 +41,5 @@ curl -o ~/.config/kitty/kitty.conf https://raw.githubusercontent.com/emadadel4/V
 # Screen Color Depth
 sudo mkdir -p /etc/X11/xorg.conf.d/
 sudo curl -o /etc/X11/xorg.conf.d/10-monitor.conf https://raw.githubusercontent.com/emadadel4/Void-Linux/refs/heads/main/10-monitor.conf
+
+# Setup Gaming 

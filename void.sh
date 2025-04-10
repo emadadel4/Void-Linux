@@ -22,7 +22,8 @@ sudo ln -s /etc/sv/bluez-alsa /var/service/
 sudo ln -s /etc/sv/alsa /var/service/
 sudo ln -s /etc/sv/pulseaudio /var/service/
 sleep 2
-sudo sv restart pulseaudio
+sudo sv start bluetoothd
+sudo sv start pulseaudio
 
 # Add bash completion source line to .bashrc
 echo "Add bash completion source line to .bashrc..."

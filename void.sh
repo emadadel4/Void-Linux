@@ -6,7 +6,7 @@ sudo xbps-install -Su -y
 
 echo "Install required packages.."
 # Install required packages
-sudo xbps-install -S -y nano xrandr bluez bluez-alsa blueman vlc uget redshift redshift-gtk kitty bash-completion
+sudo xbps-install -S -y nano xrandr bluez bluez-alsa blueman vlc uget redshift redshift-gtk kitty bash-completion pulseaudio
 
 
 # Set up pulseaudio service

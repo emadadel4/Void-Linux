@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # Update
 echo "Update Void.."
 sudo xbps-install void-repo-nonfree void-repo-multilib-nonfree void-repo-multilib -y

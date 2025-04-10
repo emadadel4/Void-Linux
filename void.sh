@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # Update
-sudo xbps-install void-repo-nonfree void-repo-multilib-nonfree void-repo-multilib -y
+sudo xbps-install -S void-repo-nonfree void-repo-multilib-nonfree void-repo-multilib -y
 xbps-install -Su -y
 
 # Install required packages
-sudo xbps-install -y nano xrandr bluez bluez-alsa blueman vlc uget redshift redshift-gtk kitty bash-completion
+sudo xbps-install -S -y nano xrandr bluez bluez-alsa blueman vlc uget redshift redshift-gtk kitty bash-completion
 
 # Enable Bluetooth services
 sudo ln -sf /etc/sv/bluetoothd /var/service/

@@ -27,3 +27,5 @@ mkdir -p ~/.config/redshift
 touch ~/.config/redshift/redshift.conf
 nano ~/.config/redshift/redshift.conf
 curl -s https://raw.githubusercontent.com/jonls/redshift/master/redshift.conf.sample -o ~/.config/redshift/redshift.conf
+
+echo -e 'Section "Monitor"\n    Identifier   "HDMI-1"\n    Option       "BroadcastRGB" "Full"\nEndSection\n\nSection "Screen"\n    Identifier   "Screen0"\n    Monitor      "HDMI-1"\nEndSection' | sudo tee -a /etc/X11/xorg.conf.d/10-monitor.conf

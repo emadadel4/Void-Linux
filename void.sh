@@ -13,7 +13,7 @@ sudo xbps-install -S -y nano xrandr bluez bluez-alsa blueman vlc uget redshift r
 echo "Set up pulseaudio service..."
 sudo mkdir -p /var/service/pulseaudio
 sudo echo -e '#!/bin/bash\nexec /usr/bin/pulseaudio --start --log-target=syslog' | sudo tee /var/service/pulseaudio/run > /dev/null
-sudo chmod +x /etc/sv/pulseaudio/run
+sudo chmod +x /var/service/pulseaudio/run
 
 # Enable Bluetooth services
 echo "Enable Bluetooth services..."

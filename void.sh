@@ -22,7 +22,7 @@ sudo ln -s /etc/sv/bluetoothd /var/service/
 sudo ln -s /etc/sv/bluez-alsa /var/service/
 sudo ln -s /etc/sv/alsa /var/service/
 sudo ln -s /etc/sv/pulseaudio /var/service/
-curl -L -o xfce-settings-backup.tar.gz https://github.com/emadadel4/Void-Linux/raw/refs/heads/main/.main.conf
+sudo curl -L -o xfce-settings-backup.tar.gz https://github.com/emadadel4/Void-Linux/raw/refs/heads/main/.main.conf
 sleep 2
 sudo cp -f .main.conf /etc/bluetooth/
 sleep 2
@@ -36,7 +36,7 @@ source ~/.bashrc
 
 # Restore XFCE settings
 echo "Restore XFCE settings..."
-curl -L -o xfce-settings-backup.tar.gz https://github.com/emadadel4/Void-Linux/raw/refs/heads/main/xfce4-config.tar.gz
+sudo curl -L -o xfce-settings-backup.tar.gz https://github.com/emadadel4/Void-Linux/raw/refs/heads/main/xfce4-config.tar.gz
 sleep 2
 sudo tar -xzvf xfce4-config.tar.gz .config/
 

@@ -26,25 +26,23 @@ source ~/.bashrc
 curl -L -o xfce-settings-backup.tar.gz https://github.com/emadadel4/Void-Linux/raw/refs/heads/main/xfce-settings-backup.tar.gz
 
 if [ -f "xfce-settings-backup.tar.gz" ]; then
-    tar xzvf xfce-settings-backup.tar.gz -C ~/
-    
-    mkdir -p ~/.config/xfce4/xfconf/xfce-perchannel-xml/
-    cp -f xfce-perchannel-xml/*.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/
-    
+    sudo tar xzvf xfce-settings-backup.tar.gz -C ~/
+    sudo mkdir -p ~/.config/xfce4/xfconf/xfce-perchannel-xml/
+    sudo cp -f xfce-perchannel-xml/*.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/
     xfce4-panel --restart
 else
     echo "Failed to download XFCE settings backup."
 fi
 
 # Redshift Settings
-mkdir -p ~/.config/redshift
-touch ~/.config/redshift/redshift.conf
-nano ~/.config/redshift/redshift.conf
-curl -s https://raw.githubusercontent.com/jonls/redshift/master/redshift.conf.sample -o ~/.config/redshift/redshift.conf
+sudo mkdir -p ~/.config/redshift
+sudo touch ~/.config/redshift/redshift.conf
+sudo nano ~/.config/redshift/redshift.conf
+sudo curl -s https://raw.githubusercontent.com/jonls/redshift/master/redshift.conf.sample -o ~/.config/redshift/redshift.conf
 
 # Terminal Settings
-mkdir -p ~/.config/kitty
-curl -o ~/.config/kitty/kitty.conf https://raw.githubusercontent.com/emadadel4/Void-Linux/refs/heads/main/kitty.conf
+sudo mkdir -p ~/.config/kitty
+sudo curl -o ~/.config/kitty/kitty.conf https://raw.githubusercontent.com/emadadel4/Void-Linux/refs/heads/main/kitty.conf
 
 # Screen Color Depth
 sudo mkdir -p /etc/X11/xorg.conf.d/

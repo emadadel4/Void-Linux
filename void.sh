@@ -8,7 +8,6 @@ echo "Install required packages.."
 # Install required packages
 sudo xbps-install -S -y nano xrandr bluez bluez-alsa blueman vlc uget redshift redshift-gtk kitty bash-completion pulseaudio
 
-
 # Set up pulseaudio service
 echo "Set up pulseaudio service..."
 sudo mkdir -p /var/service/pulseaudio

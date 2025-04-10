@@ -24,9 +24,17 @@ source ~/.bashrc
 
 # Restore XFCE settings
 curl -L -o xfce-settings-backup.tar.gz https://github.com/emadadel4/Void-Linux/raw/refs/heads/main/xfce-settings-backup.tar.gz
-tar xzvf xfce-settings-backup.tar.gz -C ~/
-cp -f xfce-perchannel-xml/*.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/
-xfce4-panel --restart
+
+if [ -f "xfce-settings-backup.tar.gz" ]; then
+    tar xzvf xfce-settings-backup.tar.gz -C ~/
+    
+    mkdir -p ~/.config/xfce4/xfconf/xfce-perchannel-xml/
+    cp -f xfce-perchannel-xml/*.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/
+    
+    xfce4-panel --restart
+else
+    echo "Failed to download XFCE settings backup."
+fi
 
 # Redshift Settings
 mkdir -p ~/.config/redshift

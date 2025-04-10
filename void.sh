@@ -35,7 +35,7 @@ sleep 1
 sudo cp -f ~/xfce-perchannel-xml/*.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/
 
 # Redshift Settings
-echo "Redshift settings..."
+echo "Applying redshift settings..."
 sudo mkdir -p .config/redshift
 sudo curl -s https://raw.githubusercontent.com/jonls/redshift/master/redshift.conf.sample -o .config/redshift/redshift.conf
 

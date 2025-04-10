@@ -17,7 +17,9 @@ sudo ln -sf /etc/sv/alsa /var/service/
 # Set up pulseaudio service
 echo "Set up pulseaudio service..."
 sudo mkdir -p /etc/sv/pulseaudio
-echo -e '#!/bin/bash\nexec /usr/bin/pulseaudio --start --log-target=syslog' | sudo tee /etc/sv/pulseaudio/run > /dev/null
+
+sudo echo -e '#!/bin/bash\nexec /usr/bin/pulseaudio --start --log-target=syslog' | sudo tee /etc/sv/pulseaudio/run > /dev/null
+
 sudo chmod +x /etc/sv/pulseaudio/run
 sudo ln -sf /etc/sv/pulseaudio /var/service/
 

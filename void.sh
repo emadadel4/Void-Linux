@@ -18,9 +18,9 @@ sudo xbps-install -S -y nano xrandr bluez blueman libspa-bluetooth vlc uget reds
 #echo "done" >> ~/.xinitrc
 
 # Enable Bluetooth services
-echo "Enable Bluetooth services..."
-rfkill unblock bluetooth
-sudo ln -s /etc/sv/bluetoothd /var/service/
+#echo "Enable Bluetooth services..."
+#rfkill unblock bluetooth
+#sudo ln -s /etc/sv/bluetoothd /var/service/
 
 # Add bash completion source line to .bashrc
 echo "Add bash completion source line to .bashrc..."

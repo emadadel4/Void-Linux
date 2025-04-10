@@ -35,11 +35,9 @@ source ~/.bashrc
 
 # Restore XFCE settings
 echo "Restore XFCE settings..."
-curl -L -o xfce-settings-backup.tar.gz https://github.com/emadadel4/Void-Linux/raw/refs/heads/main/xfce-settings-backup.tar.gz
+curl -L -o xfce-settings-backup.tar.gz https://github.com/emadadel4/Void-Linux/raw/refs/heads/main/xfce4-config.tar.gz
 sleep 2
-sudo tar xzvf xfce-settings-backup.tar.gz
-sleep 1
-sudo cp -f ~/xfce-perchannel-xml/*.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/
+sudo tar -xzvf xfce4-config.tar.gz .config/
 
 # Redshift Settings
 echo "Applying redshift settings..."

@@ -7,27 +7,20 @@ sudo xbps-install -Su -y
 
 echo "Install required packages.."
 # Install required packages
-sudo xbps-install -S -y nano xrandr bluez bluez-alsa blueman vlc uget redshift redshift-gtk kitty bash-completion pulseaudio
+sudo xbps-install -S -y nano xrandr bluez blueman libspa-bluetooth vlc uget redshift redshift-gtk kitty bash-completion
 
-# Set up pulseaudio service
-echo "Set up pulseaudio service..."
-sudo mkdir -p /etc/sv/pulseaudio
-sudo echo -e '#!/bin/bash\exec /usr/bin/pulseaudio --daemonize --log-target=syslog' | sudo tee /etc/sv/pulseaudio/run > /dev/null
-sudo chmod +x /etc/sv/pulseaudio/run
+# Set up pipewire service
+#echo "/usr/bin/pipewire &" >> .xinitrc
+#echo "/usr/bin/pipewire-pulse &" >> .xinitrc
+#echo "/usr/bin/wireplumber &" >> .xinitrc
+#echo "while true; do" >> ~/.xinitrc
+#echo "   dwm > /dev/null 2>&1" >> .xinitrc
+#echo "done" >> ~/.xinitrc
 
 # Enable Bluetooth services
 echo "Enable Bluetooth services..."
 rfkill unblock bluetooth
 sudo ln -s /etc/sv/bluetoothd /var/service/
-sudo ln -s /etc/sv/bluez-alsa /var/service/
-#sudo ln -s /etc/sv/alsa /var/service/
-sudo ln -s /etc/sv/pulseaudio /var/service/
-sudo curl -L -o xfce-settings-backup.tar.gz https://github.com/emadadel4/Void-Linux/raw/refs/heads/main/.main.conf
-sleep 2
-sudo cp -f .main.conf /etc/bluetooth/
-sleep 2
-sudo sv start bluetoothd
-sudo sv start pulseaudio
 
 # Add bash completion source line to .bashrc
 echo "Add bash completion source line to .bashrc..."

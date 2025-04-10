@@ -8,20 +8,19 @@ echo "Install required packages.."
 # Install required packages
 sudo xbps-install -S -y nano xrandr bluez bluez-alsa blueman vlc uget redshift redshift-gtk kitty bash-completion
 
-# Enable Bluetooth services
-echo "Enable Bluetooth services..."
-sudo ln -sf /etc/sv/bluetoothd /var/service/
-sudo ln -sf /etc/sv/bluez-alsa /var/service/
-sudo ln -sf /etc/sv/alsa /var/service/
 
 # Set up pulseaudio service
 echo "Set up pulseaudio service..."
 sudo mkdir -p /etc/sv/pulseaudio
-
 sudo echo -e '#!/bin/bash\nexec /usr/bin/pulseaudio --start --log-target=syslog' | sudo tee /etc/sv/pulseaudio/run > /dev/null
-
 sudo chmod +x /etc/sv/pulseaudio/run
-sudo ln -sf /etc/sv/pulseaudio /var/service/
+
+# Enable Bluetooth services
+echo "Enable Bluetooth services..."
+sudo ln -s /etc/sv/bluetoothd /var/service/
+sudo ln -s /etc/sv/bluez-alsa /var/service/
+sudo ln -s /etc/sv/alsa /var/service/
+sudo ln -s /etc/sv/pulseaudio /var/service/
 
 # Add bash completion source line to .bashrc
 echo "Add bash completion source line to .bashrc..."

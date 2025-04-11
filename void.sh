@@ -46,4 +46,4 @@ echo 'xrandr --output HDMI-1 --set "Broadcast RGB" "Full"' >> .xprofile
 echo "Kitty settings..."
 sudo mkdir -p .config/kitty
 sudo curl -o .config/kitty/kitty.conf https://raw.githubusercontent.com/emadadel4/Void-Linux/refs/heads/main/kitty.conf
-
+sudo curl -o .config/kitty/VibrantInk.conf https://raw.githubusercontent.com/kovidgoyal/kitty-themes/refs/heads/master/themes/VibrantInk.conf

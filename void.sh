@@ -39,13 +39,11 @@ echo "Install required packages.."
 #sudo curl -s https://raw.githubusercontent.com/jonls/redshift/master/redshift.conf.sample -o .config/redshift/redshift.conf
 
 # Screen Color Depth
-#echo "Screen Color Depth..."
-#sudo mkdir -p /etc/X11/xorg.conf.d/
-#sudo curl -o /etc/X11/xorg.conf.d/10-monitor.conf https://raw.githubusercontent.com/emadadel4/Void-Linux/refs/heads/main/10-monitor.conf
+echo "Screen Color Depth..."
+echo 'xrandr --output HDMI-1 --set "Broadcast RGB" "Full"' >> .xprofile
 
 # Terminal Settings
 echo "Kitty settings..."
 sudo mkdir -p .config/kitty
 sudo curl -o .config/kitty/kitty.conf https://raw.githubusercontent.com/emadadel4/Void-Linux/refs/heads/main/kitty.conf
-
 

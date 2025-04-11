@@ -28,17 +28,24 @@ echo "Install required packages.."
 #source ~/.bashrc
 
 # Restore XFCE settings
-echo "Restore XFCE settings..."
-sudo curl -L -o xfce4-config.tar.gz https://github.com/emadadel4/Void-Linux/raw/refs/heads/main/xfce4-config.tar.gz
-sleep 2
-tar -xzvf xfce4-config.tar.gz
+#echo "Restore XFCE settings..."
+#sudo curl -L -o xfce4-config.tar.gz https://github.com/emadadel4/Void-Linux/raw/refs/heads/main/xfce4-config.tar.gz
+#sleep 2
+#tar -xzvf xfce4-config.tar.gz
 
 # Redshift Settings
-echo "Applying redshift settings..."
-sudo mkdir -p .config/redshift
-sudo curl -s https://raw.githubusercontent.com/jonls/redshift/master/redshift.conf.sample -o .config/redshift/redshift.conf
+#echo "Applying redshift settings..."
+#sudo mkdir -p .config/redshift
+#sudo curl -s https://raw.githubusercontent.com/jonls/redshift/master/redshift.conf.sample -o .config/redshift/redshift.conf
 
 # Screen Color Depth
 #echo "Screen Color Depth..."
 #sudo mkdir -p /etc/X11/xorg.conf.d/
 #sudo curl -o /etc/X11/xorg.conf.d/10-monitor.conf https://raw.githubusercontent.com/emadadel4/Void-Linux/refs/heads/main/10-monitor.conf
+
+# Terminal Settings
+echo "Kitty settings..."
+sudo mkdir -p .config/kitty
+sudo curl -o .config/kitty/kitty.conf https://raw.githubusercontent.com/emadadel4/Void-Linux/refs/heads/main/kitty.conf
+
+

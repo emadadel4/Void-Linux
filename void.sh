@@ -23,9 +23,9 @@ echo "Install required packages.."
 #sudo ln -s /etc/sv/bluetoothd /var/service/
 
 # Add bash completion source line to .bashrc
-#echo "Add bash completion source line to .bashrc..."
-#echo "source /usr/share/bash-completion/bash_completion" >> .bashrc
-#source ~/.bashrc
+echo "Add bash completion source line to .bashrc..."
+echo "source /usr/share/bash-completion/bash_completion" >> .bashrc
+source ~/.bashrc
 
 # Restore XFCE settings
 #echo "Restore XFCE settings..."
@@ -39,11 +39,11 @@ echo "Install required packages.."
 #sudo curl -s https://raw.githubusercontent.com/jonls/redshift/master/redshift.conf.sample -o .config/redshift/redshift.conf
 
 # Screen Color Depth
-echo "Screen Color Depth..."
-echo 'xrandr --output HDMI-1 --set "Broadcast RGB" "Full"' >> .xprofile
+#echo "Screen Color Depth..."
+#echo 'xrandr --output HDMI-1 --set "Broadcast RGB" "Full"' >> .xprofile
 
 # Terminal Settings
-echo "Kitty settings..."
-sudo mkdir -p .config/kitty
-sudo curl -o .config/kitty/kitty.conf https://raw.githubusercontent.com/emadadel4/Void-Linux/refs/heads/main/kitty.conf
-sudo curl -o .config/kitty/VibrantInk.conf https://raw.githubusercontent.com/kovidgoyal/kitty-themes/refs/heads/master/themes/VibrantInk.conf
+#echo "Kitty settings..."
+#sudo mkdir -p .config/kitty
+#sudo curl -o .config/kitty/kitty.conf https://raw.githubusercontent.com/emadadel4/Void-Linux/refs/heads/main/kitty.conf
+#sudo curl -o .config/kitty/VibrantInk.conf https://raw.githubusercontent.com/kovidgoyal/kitty-themes/refs/heads/master/themes/VibrantInk.conf

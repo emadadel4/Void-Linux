@@ -10,12 +10,12 @@ echo "Install required packages.."
 sudo xbps-install -S -y nano xrandr bluez blueman libspa-bluetooth vlc uget redshift redshift-gtk kitty bash-completion telegram-desktop
 
 # Set up pipewire service
-echo "/usr/bin/pipewire &" >> .xinitrc
-echo "/usr/bin/pipewire-pulse &" >> .xinitrc
-echo "/usr/bin/wireplumber &" >> .xinitrc
-echo "while true; do" >> ~/.xinitrc
-echo "   dwm > /dev/null 2>&1" >> .xinitrc
-echo "done" >> ~/.xinitrc
+#echo "/usr/bin/pipewire &" >> .xinitrc
+#echo "/usr/bin/pipewire-pulse &" >> .xinitrc
+#echo "/usr/bin/wireplumber &" >> .xinitrc
+#echo "while true; do" >> ~/.xinitrc
+#echo "   dwm > /dev/null 2>&1" >> .xinitrc
+#echo "done" >> ~/.xinitrc
 
 # Enable Bluetooth services
 echo "Enable Bluetooth services..."

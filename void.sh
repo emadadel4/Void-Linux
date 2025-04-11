@@ -34,9 +34,9 @@ sleep 2
 tar -xzvf xfce4-config.tar.gz
 
 # Redshift Settings
-#echo "Applying redshift settings..."
-#sudo mkdir -p .config/redshift
-#sudo curl -s https://raw.githubusercontent.com/jonls/redshift/master/redshift.conf.sample -o .config/redshift/redshift.conf
+echo "Applying redshift settings..."
+sudo mkdir -p .config/redshift
+sudo curl -s https://raw.githubusercontent.com/jonls/redshift/master/redshift.conf.sample -o .config/redshift/redshift.conf
 
 # Screen Color Depth
 #echo "Screen Color Depth..."

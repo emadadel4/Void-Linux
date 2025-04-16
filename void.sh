@@ -7,7 +7,7 @@ sudo xbps-install -Su -y
 
 # Install required packages
 echo "Install required packages.."
-sudo xbps-install -S -y nano xrandr bluez blueman libspa-bluetooth vlc uget redshift redshift-gtk kitty bash-completion freerdp font-kacst SDL2_ttf unzip unrar git
+sudo xbps-install -S -y nano xrandr bluez blueman libspa-bluetooth vlc uget redshift redshift-gtk kitty bash-completion freerdp font-kacst SDL2_ttf unzip unrar git neofetch
 
 # Set up pipewire service
 #echo "/usr/bin/pipewire &" >> .xinitrc

@@ -31,7 +31,7 @@ source ~/.bashrc
 echo "Restore XFCE settings..."
 sudo curl -L -o fonts.tar.gz https://github.com/emadadel4/Void-Linux/raw/refs/heads/main/fonts.tar.gz
 sleep 2
-tar -xzvf fonts.tar.gz .local/share
+tar -xzvf fonts.tar.gz -C .local/share
 
 
 # Restore XFCE settings

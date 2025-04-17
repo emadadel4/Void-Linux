@@ -2,7 +2,7 @@
 
 # Update
 echo "Update Void.."
-sudo xbps-install void-repo-nonfree void-repo-multilib-nonfree void-repo-multilib -y
+sudo xbps-install void-repo-nonfree void-repo-multilib-nonfree void-repo-multilib xtools -y
 sudo xbps-install -Su -y
 
 # Install required packages

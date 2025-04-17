@@ -41,5 +41,5 @@ sleep 2
 tar -xzvf xfce4-config.tar.gz
 
 echo "[i] Do you want Gaming on Void?"
-sudo xbps-install -S mesa-dri-32bit mesa-vulkan-intel mesa-vulkan-intel-32bit vulkan-loader-32bit gnutls-32bit libvulkan-32bit libgnutls-32bit libgcc-32bit libstdc++-32bit libdrm-32bit libglvnd-32bit wine wine-32bit winetricks luttrs gamemode mangohud gamescope 
+sudo xbps-install -S mesa-dri-32bit mesa-vulkan-intel mesa-vulkan-intel-32bit vulkan-loader-32bit gnutls-32bit libvulkan-32bit libgcc-32bit libstdc++-32bit libdrm-32bit libglvnd-32bit wine wine-32bit winetricks luttrs gamemode gamescope 
 echo "[i] Type 'n' to cancel"

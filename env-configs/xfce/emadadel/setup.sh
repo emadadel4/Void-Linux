@@ -9,6 +9,7 @@ sudo xbps-install -Su -y
 xbps-query -R void-repo-nonfree > /dev/null 2>&1 || sudo xbps-install -y void-repo-nonfree > /dev/null 2>&1
 xbps-query -R void-repo-multilib-nonfree > /dev/null 2>&1 || sudo xbps-install -y void-repo-multilib-nonfree > /dev/null 2>&1
 xbps-query -R void-repo-multilib > /dev/null 2>&1 || sudo xbps-install -y void-repo-multilib > /dev/null 2>&1
+
 # Define packages clearly using a multi-line array-like format
 read -r -d '' PkgList <<'EOF'
 nano

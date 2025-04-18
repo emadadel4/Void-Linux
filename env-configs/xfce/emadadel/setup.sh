@@ -79,3 +79,5 @@ echo -e "\033[1;33m[+] Restore XFCE settings...\033[0m"
 
 echo -e "\033[1;33m[i] Do you want Gaming on Void?\033[0m"
 sudo xbps-install -S wine wine-32bit winetricks lutris gamemode gamescope 
+
+echo "test"

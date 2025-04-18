@@ -16,7 +16,7 @@ chmod +x ./void.sh
 <br>
 <br>
 
-## XFCE Environment Config
+## XFCE Configuration – Emad Adel's Preferences
 ```bash
 curl -sL https://raw.githubusercontent.com/emadadel4/Void-Linux/refs/heads/main/env-configs/xfce/emadadel/setup.sh | sudo bash
 ```

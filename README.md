@@ -6,7 +6,7 @@ sudo xbps-install -S curl
 
 
 ```
-Fresh Void Install (Base)
+Void Install (Base)
 ```bash
 curl -sL https://raw.githubusercontent.com/emadadel4/Void-Linux/refs/heads/main/void.sh | sudo bash
 ```

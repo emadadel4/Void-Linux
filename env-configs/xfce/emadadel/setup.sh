@@ -29,14 +29,14 @@ source ~/.bashrc
 
 # Installing fonts...
 echo "[+] Restore XFCE settings..."
-sudo curl -L -o fonts.tar.gz https://github.com/emadadel4/Void-Linux/raw/refs/heads/main/fonts.tar.gz
+sudo curl -L -o fonts.tar.gz https://github.com/emadadel4/Void-Linux/raw/refs/heads/main/env-configs/xfce/emadadel/fonts.tar.gz
 sleep 2
 tar -xzvf fonts.tar.gz -C .local/share
 
 
 # Restore XFCE settings
 echo "[+] Restore XFCE settings..."
-sudo curl -L -o xfce4-config.tar.gz https://github.com/emadadel4/Void-Linux/raw/refs/heads/main/xfce4-config.tar.gz
+sudo curl -L -o xfce4-config.tar.gz https://github.com/emadadel4/Void-Linux/raw/refs/heads/main/env-configs/xfce/emadadel/xfce4-config.tar.gz
 sleep 2
 tar -xzvf xfce4-config.tar.gz
 

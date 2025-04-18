@@ -5,8 +5,8 @@
 # Description: This script setup Void Linux environment and packages
 # --------------------------------------
 
-tput civis
-trap "tput cnorm; clear; exit" INT TERM EXIT
+#tput civis
+#trap "tput cnorm; clear; exit" INT TERM EXIT
 
 declare -A menus
 menus["main"]="Environment Packages Install"

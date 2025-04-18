@@ -1,6 +1,6 @@
 echo "Installing KDE environment..." 
 
-sudo xbps-install -S kde-plasma dolphin NetworkManager bluez blueman libspa-bluetooth pipewire wireplumber pavucontrol ffmpeg ffmpegthumbnailer kdegraphics-thumbnailers
+#sudo xbps-install -S kde-plasma dolphin NetworkManager bluez blueman libspa-bluetooth pipewire wireplumber pavucontrol ffmpeg ffmpegthumbnailer kdegraphics-thumbnailers
 
 echo "[+] Enabling essential services..."
 #sudo rfkill unblock bluetooth

@@ -1,7 +1,6 @@
 #!/bin/bash
 
 clear
-
 # Update
 echo -e "\033[1;33m[+] Update Void..\033[0m"
 sudo xbps-install -Su -y

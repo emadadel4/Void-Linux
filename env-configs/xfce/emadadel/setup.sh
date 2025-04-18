@@ -1,5 +1,7 @@
 #!/bin/bash
 
+Clear
+
 # Update
 echo "[+] Update Void.."
 sudo xbps-install -Su -y

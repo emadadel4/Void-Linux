@@ -22,7 +22,7 @@ menu_stack=()
 # Define actions
 run_kde() {
     #./scripts/kde.sh
-    curl -s https://raw.githubusercontent.com/emadadel4/Void-Linux/refs/heads/main/scripts/env/kde/kde6.sh | bash
+    curl -s https://raw.githubusercontent.com/emadadel4/Void-Linux/refs/heads/main/scripts/env/kde/setup.sh | bash
 }
 
 # run_xfce(){ 

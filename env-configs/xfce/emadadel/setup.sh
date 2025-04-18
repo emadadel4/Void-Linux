@@ -1,6 +1,6 @@
 #!/bin/bash
 
-Clear
+clear
 
 # Update
 echo "[+] Update Void.."

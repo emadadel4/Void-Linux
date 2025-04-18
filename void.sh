@@ -5,8 +5,8 @@
 # Description: This script setup Void Linux environment and packages
 # --------------------------------------
 
-#tput civis
-#trap "tput cnorm; clear; exit" INT TERM EXIT
+tput civis
+trap "tput cnorm; clear; exit" INT TERM EXIT
 
 declare -A menus
 menus["main"]="Environment Packages Install"
@@ -136,7 +136,7 @@ while true; do
             elif [[ -n "${menus[$selected_item]}" ]]; then
                 # Load Packages if entering the Packages menu
                 if [[ "$selected_item" == "Packages" && "${menus[$selected_item]}" == "Loading..." ]]; then
-                    #load_packages
+                    load_packages
                 fi
                 menu_stack+=("$current_menu")
                 current_menu="$selected_item"

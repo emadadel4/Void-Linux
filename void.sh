@@ -73,9 +73,13 @@ draw_menu() {
 
 # Execute the selected environment installation or package installation
 execute_selected() {
+
+    if [ ${#selected[@]} -le 0 ]; then
+        echo "No packages selected"
+        return
+    fi
+
     clear
-    echo "Installing selected packages..."
-    echo
 
     package_list=()
 

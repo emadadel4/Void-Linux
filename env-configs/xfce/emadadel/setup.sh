@@ -5,7 +5,6 @@ echo "[+] Update Void.."
 sudo xbps-install -Su -y
 sudo xbps-install void-repo-nonfree void-repo-multilib-nonfree void-repo-multilib xtools -y
 
-
 # Define packages clearly using a multi-line array-like format
 read -r -d '' PkgList <<'EOF'
 nano

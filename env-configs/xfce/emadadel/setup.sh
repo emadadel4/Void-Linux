@@ -68,11 +68,11 @@ sudo curl -L -o xfce4-config.tar.gz https://github.com/emadadel4/Void-Linux/raw/
 sleep 2
 #tar -xzvf xfce4-config.tar.gz
 
-echo -e "\033[1;33m[i] Do you want Gaming on Void?\033[0m"
+echo -e "\033[1;33m[i] Do you want Gaming on Void\033[0m"
 sudo xbps-install -S wine wine-32bit winetricks lutris gamemode gamescope 
 echo -e "\033[1;33m[+] Done.\033[0m"
 
-echo -e "\033[1;33m[i] Do you want install virt-manager ?\033[0m"
+echo -e "\033[1;33m[i] Do you want install virt-manager\033[0m"
 sudo xbps-install -S libvirt virt-manager virt-manager-tools qemu qemu-ga
 
 

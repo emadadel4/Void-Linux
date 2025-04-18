@@ -40,7 +40,6 @@ load_packages() {
 }
 
 draw_menu() {
-
     clear
     echo -e "\e[1;33m       _________"
     echo -e "      \\         /"
@@ -98,7 +97,6 @@ execute_selected() {
 
     if [[ ${#package_list[@]} -gt 0 ]]; then
         # Instead of using for loop, install all selected packages in one command
-        #echo "→ Installing packages: ${package_list[*]}"
         sudo xbps-install -S "${package_list[@]}"
         echo
     fi

@@ -1,6 +1,21 @@
-echo "Installing KDE environment..." 
+echo -e "\033[33mInstalling KDE environment...\033[0m"
 
-#sudo xbps-install -S kde-plasma dolphin NetworkManager bluez blueman libspa-bluetooth pipewire wireplumber pavucontrol ffmpeg ffmpegthumbnailer kdegraphics-thumbnailers
+# Define packages clearly using a multi-line array-like format
+read -r -d '' PkgList <<'EOF'
+kde-plasma
+dolphin 
+NetworkManager 
+bluez 
+blueman 
+libspa-bluetooth 
+pipewire wireplumber 
+pavucontrol 
+ffmpeg 
+ffmpegthumbnailer 
+kdegraphics-thumbnailers
+EOF
+
+sudo xbps-install -S $PkgList
 
 echo "[+] Enabling essential services..."
 #sudo rfkill unblock bluetooth

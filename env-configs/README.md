@@ -8,9 +8,9 @@ The `setup.sh` script should handle applying or copying the configuration files.
 Example structure:
 
 configs/
-├── KDE/
+├── KDE/mohamed/
 │   └── setup.sh
-├── XFCE/
+├── XFCE/emadadel/
 │   └── setup.sh
 └── your_env/
     └── setup.sh

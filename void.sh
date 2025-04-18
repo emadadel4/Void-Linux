@@ -136,7 +136,7 @@ while true; do
             elif [[ -n "${menus[$selected_item]}" ]]; then
                 # Load Packages if entering the Packages menu
                 if [[ "$selected_item" == "Packages" && "${menus[$selected_item]}" == "Loading..." ]]; then
-                    load_packages
+                    #load_packages
                 fi
                 menu_stack+=("$current_menu")
                 current_menu="$selected_item"

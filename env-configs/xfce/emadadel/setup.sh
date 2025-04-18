@@ -5,7 +5,11 @@ Clear
 # Update
 echo "[+] Update Void.."
 sudo xbps-install -Su -y
-sudo xbps-install void-repo-nonfree void-repo-multilib-nonfree void-repo-multilib xtools -y
+#sudo xbps-install void-repo-nonfree void-repo-multilib-nonfree void-repo-multilib -y
+
+xbps-query -R void-repo-nonfree || sudo xbps-install -y void-repo-nonfree
+xbps-query -R void-repo-multilib-nonfree || sudo xbps-install -y void-repo-multilib-nonfree
+xbps-query -R void-repo-multilib || sudo xbps-install -y void-repo-multilib
 
 # Define packages clearly using a multi-line array-like format
 read -r -d '' PkgList <<'EOF'
@@ -37,6 +41,7 @@ libgcc-32bit
 libstdc++-32bit 
 libdrm-32bit 
 libglvnd-32bit
+xtools
 EOF
 
 # Sync repos then install all packages at once

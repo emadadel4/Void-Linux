@@ -73,5 +73,5 @@ sudo xbps-install -S $PkgList
 #tar -xzvf xfce4-config.tar.gz
 
 #echo "[i] Do you want Gaming on Void?"
-sudo xbps-install -S wine wine-32bit winetricks luttrs gamemode gamescope 
+sudo xbps-install -S wine wine-32bit winetricks lutris gamemode gamescope 
 #echo "[i] Type 'n' to cancel"

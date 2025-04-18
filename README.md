@@ -3,14 +3,20 @@ Install curl
 sudo xbps-install -S curl
 ```
 
-Void Install (Base)
+## Void Setup (Base)
 ```bash
 curl https://raw.githubusercontent.com/emadadel4/Void-Linux/refs/heads/main/void.sh -o void.sh
-chmod +x ./void.sh
-./void.sh
 ```
+```bash
+chmod +x ./void.sh
+```
+```bash
+./void.sh   
+```
+<br>
+<br>
 
-XFCE Environment Config
+## XFCE Environment Config
 ```bash
 curl -sL https://raw.githubusercontent.com/emadadel4/Void-Linux/refs/heads/main/env-configs/xfce/emadadel/setup.sh | sudo bash
 ```

@@ -73,5 +73,5 @@ sudo xbps-install -S $PkgList
 #sleep 2
 #tar -xzvf xfce4-config.tar.gz
 
-echo "[i] Do you want Gaming on Void?"
+echo "[i] Do you want Gaming on Void"
 sudo xbps-install -S wine wine-32bit winetricks lutris gamemode gamescope 

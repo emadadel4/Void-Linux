@@ -57,7 +57,6 @@ sudo xbps-install -S $PkgList
 #sleep 2
 #tar -xzvf fonts.tar.gz -C .local/share
 
-
 # Restore XFCE settings
 #echo "[+] Restore XFCE settings..."
 #sudo curl -L -o xfce4-config.tar.gz https://github.com/emadadel4/Void-Linux/raw/refs/heads/main/env-configs/xfce/emadadel/xfce4-config.tar.gz

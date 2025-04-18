@@ -5,12 +5,10 @@ You can place your custom configuration files inside the appropriate subdirector
 Make a directory for your environment config and create a `setup.sh` file inside it.  
 The `setup.sh` script should handle applying or copying the configuration files.
 
-Example structure:
+### Example Directory Structure:
 
-env-configs/
-├── KDE/mohamed/
-│   └── setup.sh
-├── XFCE/emadadel/
-│   └── setup.sh
-└── your_env/
-    └── setup.sh
+| Environment   | Directory     | Script    |
+| ------------- | ------------- | --------- |
+| KDE           | `KDE/mohamed/`| `setup.sh`|
+| XFCE          | `XFCE/emadadel/`| `setup.sh`|
+| Your custom environment | `your_env/` | `setup.sh`|

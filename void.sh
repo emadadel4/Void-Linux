@@ -30,7 +30,7 @@ actions["KDE"]="run_kde"
 # Function to load packages from JSON URL
 load_packages() {
     echo -e "\nLoading Packages..."
-    menus["Packages"]=$(curl -s https://raw.githubusercontent.com/emadadel4/Void-Linux/refs/heads/main/packages/test.json | sed 's/\[//g' | sed 's/\]//g' | sed 's/","/ /g' | sed 's/"//g' | sed 's/,/ /g')
+    menus["Packages"]=$(curl -s https://raw.githubusercontent.com/emadadel4/Void-Linux/refs/heads/main/packages/pkg.json | sed 's/\[//g' | sed 's/\]//g' | sed 's/","/ /g' | sed 's/"//g' | sed 's/,/ /g')
 }
 
 # Draw the menu with dynamic items

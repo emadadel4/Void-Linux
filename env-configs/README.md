@@ -7,8 +7,12 @@ The `setup.sh` script should handle applying or copying the configuration files.
 
 ### Example Directory Structure:
 
-| Environment   | Directory     | Script    |
-| ------------- | ------------- | --------- |
-| KDE           | `KDE/mohamed/`| `setup.sh`|
-| XFCE          | `XFCE/emadadel/`| `setup.sh`|
-| Your custom environment | `your_env/` | `setup.sh`|
+```Example
+├── KDE/
+│   └── mohamed/
+│       └── setup.sh
+├── XFCE/
+│   └── emadadel/
+│       └── setup.sh
+
+```

@@ -75,7 +75,6 @@ draw_menu() {
 execute_selected() {
 
     if [ ${#selected[@]} -le 0 ]; then
-        echo "No options selected"
         return
     fi
 

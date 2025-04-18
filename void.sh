@@ -2,7 +2,7 @@
 
 # --------------------------------------
 # Made by: Emad Adel
-# Description: This script setup Void Linux environment and packages
+# Description: This script sets up Void Linux environment and packages
 # --------------------------------------
 
 tput civis
@@ -19,26 +19,21 @@ current_menu="main"
 cursor=0
 menu_stack=()
 
-# Define actions
+# Define actions for each environment setup
 run_kde() {
-    #./scripts/kde.sh
     curl -s https://raw.githubusercontent.com/emadadel4/Void-Linux/refs/heads/main/scripts/env/kde/setup.sh | bash
 }
 
-# run_xfce(){ 
-#     echo "Installing XFCE..."; sleep 1; 
-# }
-
 # Map actions
 actions["KDE"]="run_kde"
-#actions["XFCE"]="run_xfce"
 
-# Function to load Packages from JSON URL
+# Function to load packages from JSON URL
 load_packages() {
     echo -e "\nLoading Packages..."
     menus["Packages"]=$(curl -s https://raw.githubusercontent.com/emadadel4/Void-Linux/refs/heads/main/packages/test.json | sed 's/\[//g' | sed 's/\]//g' | sed 's/","/ /g' | sed 's/"//g' | sed 's/,/ /g')
 }
 
+# Draw the menu with dynamic items
 draw_menu() {
     clear
     echo -e "\e[1;33m       _________"
@@ -76,6 +71,7 @@ draw_menu() {
     done
 }
 
+# Execute the selected environment installation or package installation
 execute_selected() {
     clear
     echo "Installing selected packages..."
@@ -96,17 +92,16 @@ execute_selected() {
     done
 
     if [[ ${#package_list[@]} -gt 0 ]]; then
-        # Instead of using for loop, install all selected packages in one command
         sudo xbps-install -S "${package_list[@]}"
         echo
     fi
 
-    # Clear all selections after install
     selected=()
 
     read -p "Done. Press any key to continue..." -n1
 }
 
+# Main loop to handle navigation and selection
 while true; do
     draw_menu
     IFS= read -rsn1 key
@@ -134,7 +129,6 @@ while true; do
             if [[ "$selected_item" == "Install" && "$current_menu" == "main" ]]; then
                 execute_selected
             elif [[ -n "${menus[$selected_item]}" ]]; then
-                # Load Packages if entering the Packages menu
                 if [[ "$selected_item" == "Packages" && "${menus[$selected_item]}" == "Loading..." ]]; then
                     load_packages
                 fi

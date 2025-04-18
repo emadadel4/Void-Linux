@@ -1,5 +1,3 @@
-### 🚀 Void Linux XFCE - Restore Settings After Reinstallation
-
 Install curl
 ```bash
 sudo xbps-install -S curl

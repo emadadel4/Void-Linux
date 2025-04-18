@@ -56,10 +56,10 @@ draw_menu() {
             if [[ "${selected[$name]}" == "1" ]]; then
                 mark="[*]"
             else
-                mark="[-]"
+                mark="[ ]"
             fi
         elif [[ -z "${menus[$name]}" && "${actions[$name]}" != "" ]]; then
-            mark="[-]"
+            mark="[ ]"
             [[ "${selected[$name]}" == "1" ]] && mark="[*]"
         fi
 

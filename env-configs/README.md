@@ -7,7 +7,7 @@ The `setup.sh` script should handle applying or copying the configuration files.
 
 Example structure:
 
-configs/
+env-configs/
 ├── KDE/mohamed/
 │   └── setup.sh
 ├── XFCE/emadadel/

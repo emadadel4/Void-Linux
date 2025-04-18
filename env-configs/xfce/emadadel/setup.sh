@@ -4,11 +4,7 @@ clear
 # Update
 echo -e "\033[1;33m[+] Update Void..\033[0m"
 sudo xbps-install -Su -y
-#sudo xbps-install void-repo-nonfree void-repo-multilib-nonfree void-repo-multilib -y
-
-xbps-query -R void-repo-nonfree > /dev/null 2>&1 || sudo xbps-install -y void-repo-nonfree > /dev/null 2>&1
-xbps-query -R void-repo-multilib-nonfree > /dev/null 2>&1 || sudo xbps-install -y void-repo-multilib-nonfree > /dev/null 2>&1
-xbps-query -R void-repo-multilib > /dev/null 2>&1 || sudo xbps-install -y void-repo-multilib > /dev/null 2>&1
+sudo xbps-install void-repo-nonfree void-repo-multilib-nonfree void-repo-multilib -y
 
 # Define packages clearly using a multi-line array-like format
 read -r -d '' PkgList <<'EOF'
@@ -74,4 +70,4 @@ echo -e "\033[1;33m[+] Restore XFCE settings...\033[0m"
 
 echo -e "\033[1;33m[i] Do you want Gaming on Void?\033[0m"
 sudo xbps-install -S wine wine-32bit winetricks lutris gamemode gamescope 
-echo "test"
+echo "Done."

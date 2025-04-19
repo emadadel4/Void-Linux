@@ -1,6 +1,6 @@
 echo -e "\033[33m[+] Installing KDE environment...\033[0m"
 
-# Define packages clearly using a multi-line array-like format
+# Define packages minimal package
 read -r -d '' PkgList <<'EOF'
 kde-plasma
 dolphin 

@@ -30,6 +30,7 @@ mesa-dri-32bit
 mesa-vulkan-intel 
 mesa-vulkan-intel-32bit 
 vulkan-loader-32bit 
+intel-video-accel
 gnutls-32bit 
 libvulkan-32bit 
 libgcc-32bit 
